@@ -18,7 +18,7 @@ class App extends Component {
     return (
       <ApolloProvider client={client}>
         <Router>
-          <div id="main">
+          <div id="main" className="container-fluid">
             <NavBar />
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />

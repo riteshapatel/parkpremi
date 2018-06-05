@@ -1,31 +1,6 @@
 .App {
-  padding: 5px;
+  padding: 0px;
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
 
 .contentsection {
@@ -60,39 +35,8 @@
   border-radius : .2rem;
 }
 
-pre {
-  white-space: pre-wrap;       /* css-3 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
-  background-color: #f8f8f8;
-  border: 1px solid #dfdfdf;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  padding: 0.125rem 0.3125rem 0.0625rem;
-  background-color: #404040;
-  color: white;
-  font-family: "Consolas", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", 
-              "Liberation Mono", "Nimbus Mono L", "Monaco", "Courier New", Courier, monospace;
-}
-
-pre code {
-  background-color: transparent;
-  border: 0;
-  padding: 0;
-}
-
-.awscolor {
-  color: #FE8D2E;
-}
-
 .bordered {
   border: 1px solid #404040;
-}
-
-.container-spacing {
-  margin-right: 5px;
 }
 
 .card {
@@ -200,11 +144,83 @@ pre code {
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
-  padding: 20px;
+  padding: 0;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+/* nav bar test */
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}  
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+  background: #404040;
+  color: #fff;
+  transition: all 0.3s;  
+  max-height: 640px;
+  overflow-y: auto;
+}
+
+#sidebar .sidebar-header {
+  padding: 10px;
+  background: #404040;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar ul.components {
+  padding: 10px 0;
+  border-bottom: 1px solid #404040;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 5px;
+  font-size: 1.0em;
+  display: block;
+  color: #ccc;
+}
+#sidebar ul li a:hover {
+  color: white;
+  background: #303030;
+  text-decoration: none;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+  color: #ccc;
+}
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #ccc;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+      margin-left: -250px;
+  }
+  #sidebar.active {
+      margin-left: 0;
+  }
+}
+
+.park-list {
+  min-height: 400px;
+  max-height: 700px;
+  overflow-y: auto;
 }

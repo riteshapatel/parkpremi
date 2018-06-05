@@ -8,6 +8,9 @@ class ParkList extends Component {
       let data = this.props.data;
       const tdStyle = {
           textAlign: 'center'
+      },
+      descStyle = {
+          textAlign: 'left'
       }
       if (data.loading) {
           return <tr><td>Loading...</td></tr>
@@ -22,7 +25,7 @@ class ParkList extends Component {
                         <button className="btn btn-sm btn-secondary" title="Things to do"><i className="fas fa-clipboard-list"></i></button>&nbsp;
                         <button className="btn btn-sm btn-danger" title="Images"><i className="fas fa-image"></i></button>
                     </td>
-                    <td>{park.description}</td>
+                    <td style={descStyle}>{park.description}</td>
                     <td style={tdStyle}><i className="fab fa-free-code-camp text-success"></i></td>
                     <td style={tdStyle}><i className="fas fa-comments text-info"></i></td>
                 </tr>
@@ -35,12 +38,14 @@ class ParkList extends Component {
         textAlign: 'center'
     }
     return (
-      <div style={contentStyle}>
+      <div style={contentStyle} className="park-list">
         <h5 className="text-success">{this.props.state_name} National Parks</h5>
         <table className="table table-striped">
-            <thead>
+            <thead className="table-secondary">
                 <tr>
-                    <th scope="col">Name</th>
+                    <th scope="col">
+                        Name
+                    </th>
                     <th scope="col">Description</th>
                     <th scope="col">Campgrounds</th>
                     <th scope="col">Reviews</th>
