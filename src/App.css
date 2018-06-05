@@ -1,0 +1,210 @@
+.App {
+  padding: 5px;
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.contentsection {
+  min-height: 500px;
+}
+
+.lighttext {
+  color: #888;
+}
+
+.pronounced {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.loader {
+  color: rgb(0, 162, 255);
+}
+
+.smallfonts {
+  font-size: 11px;
+}
+
+.tagfonts {
+  font-size: 12px;
+}
+
+.xs-button {
+  padding  : .25rem .4rem;
+  font-size  : .875rem;
+  line-height  : .5;
+  border-radius : .2rem;
+}
+
+pre {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  background-color: #f8f8f8;
+  border: 1px solid #dfdfdf;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  padding: 0.125rem 0.3125rem 0.0625rem;
+  background-color: #404040;
+  color: white;
+  font-family: "Consolas", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", 
+              "Liberation Mono", "Nimbus Mono L", "Monaco", "Courier New", Courier, monospace;
+}
+
+pre code {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.awscolor {
+  color: #FE8D2E;
+}
+
+.bordered {
+  border: 1px solid #404040;
+}
+
+.container-spacing {
+  margin-right: 5px;
+}
+
+.card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+
+.carousel-inner {
+  max-height: 500px !important;
+}
+
+.carousel-caption {
+  text-align: center;
+  top: 70%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.sidebar-nav {
+  width: 200px;
+  text-align: left;
+  border-top: 1px solid #ccc;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.sidebar-nav li {
+  text-indent: 0;
+  line-height: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #404040;
+  border-radius: 2px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #ccc;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+  color: #999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
