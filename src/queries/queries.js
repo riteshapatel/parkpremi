@@ -1,3 +1,7 @@
+/**
+ * @author ritesh patel 
+ * @description GraphQL queries
+ */
 import gql from 'graphql-tag';
 
 // get parks for a given state
@@ -8,6 +12,8 @@ query($state_id: String){
         description
         latLong
         id
+        designation
+        directionsUrl
     }
 }
 `

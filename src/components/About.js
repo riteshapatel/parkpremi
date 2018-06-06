@@ -1,30 +1,32 @@
+/**
+ * @author ritesh patel 
+ * @description About component
+ */
 import React, { Component } from 'react';
 import '../App.css';
 
-/**
- * About component
- */
 class About extends Component {
     /**
-     * render method
-     */
+    * @function renders component
+    */
     render() {
+        /** sets card style */
         const cardstyles = {
             width: '50%'
         }
-
+        /** sets subtitle style */
         const subtitlestyle = {
             fontSize: '11px',
             fontWeight: 'bold',
             color: '#bbb'
         }    
         return (
-            <div className={['container-fluid', 'contentsection', 'text-center', 'lighttext'].join(' ')}>
+            <div className="container-fluid contentsection text-center lighttext">
             \\ Preserve Our Parks \\
             <br /><br /><br />
                 <div className="row text-center">
                     <div className="col-sm"></div>
-                    <div className={['col', 'card', 'text-left'].join(' ')} style={cardstyles}>
+                    <div className="col card text-left" style={cardstyles}>
                         <div className="card-body">
                             <h5 className="card-title text-center text-secondary"><i className="fa fa-tree text-success"></i> About ParkPremi</h5>
                             <h6 className="card-subtitle text-center" style={subtitlestyle}>\\ park-pray-me \\</h6>
@@ -40,7 +42,7 @@ class About extends Component {
                     </div>
                     <div className="col-sm"></div>           
                 </div>
-        </div>
+            </div>
         );
     }
 }

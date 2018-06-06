@@ -1,9 +1,13 @@
+/**
+ * @author ritesh patel 
+ * @description Footer component
+ */
 import React, { Component } from 'react';
 
-/**
- * Footer component
- */
 class Footer extends Component {
+  /**
+   * @function renders component
+   */
   render() {
     const styles = {
         fontSize: '12px',

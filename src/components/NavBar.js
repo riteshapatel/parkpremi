@@ -1,10 +1,14 @@
+/**
+ * @author ritesh patel 
+ * @description Top navigation (used with router)
+ */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-/**
- * NavBar component
- */
 class NavBar extends Component {
+  /**
+   * @function renders component
+   */
   render() {
     const style = {
       verticalAlign: 'middle'

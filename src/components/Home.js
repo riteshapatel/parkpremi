@@ -1,7 +1,14 @@
+/**
+ * @author ritesh patel 
+ * @description Home component. Houses landing page with a Bootstrap Carousel.
+ */
 import React, { Component } from 'react';
 import '../App.css';
 
 class Home extends Component {
+    /**
+     * @function renders component
+     */
     render () {
         const imgStyle = {
             border: '2px solid #404040',

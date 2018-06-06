@@ -1,3 +1,8 @@
+/**
+ * 
+ * @author ritesh patel 
+ * @description GraphQL server entry point. GraphQL Server is set with Graphiql. Access graphiql @ http://localhost:3003/graphiql to test the queries
+ */
 const express = require('express'),
     serverPort = 3003,
     graphqlHTTP = require('express-graphql'),

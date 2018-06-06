@@ -1,3 +1,7 @@
+/**
+ * @author ritesh patel
+ * @description GraphQL schema. Sets various GraphQLObjectType(s) and uses resolvers with local data to fulfill the results
+ */
 const graphql = require('graphql'),
     _ = require('lodash'),
     parksJson = require('../data/parks.json'),
@@ -25,7 +29,9 @@ const graphql = require('graphql'),
             fullName: { type: GraphQLString },
             url: { type: GraphQLString },
             weatherInfo: { type: GraphQLString },
-            name: { type: GraphQLString }
+            name: { type: GraphQLString },
+            designation: { type: GraphQLString },
+            directionsUrl: { type: GraphQLString }
         })
     }),
     VisitorCenter = new GraphQLObjectType ({
@@ -53,6 +59,11 @@ const graphql = require('graphql'),
             park: {
                 type: ParkType,
                 args: { parkCode: { type: GraphQLString } },
+                /**
+                 * resolves to a specific park with a park code
+                 * @param {Object} parent - parent object
+                 * @param {Object} args - arguments object
+                 */
                 resolve (parent, args) {
                     // find a specific park
                     return _.find(parksJson.data, { parkCode: args.parkCode });
@@ -63,6 +74,11 @@ const graphql = require('graphql'),
             state_parks: {
                 type: new GraphQLList(ParkType),
                 args: { states: { type: GraphQLString } },
+                /**
+                 * resolves to all parks for a given state
+                 * @param {Object} parent - parent object
+                 * @param {Object} args - arguments object
+                 */                
                 resolve(parent, args) {
                     // get parks for a given state
                     return _.filter(parksJson.data, (item) => {
@@ -75,6 +91,11 @@ const graphql = require('graphql'),
             },
             us_states: {
                 type: new GraphQLList(StateType),
+                /**
+                 * resolves to all us states (used in left menu)
+                 * @param {Object} parent - parent object
+                 * @param {Object} args - arguments object
+                 */                
                 resolve (parent, args) {
                     // get usa states
                     return statesJson;
@@ -84,6 +105,11 @@ const graphql = require('graphql'),
             visitorcenters: {
                 type: new GraphQLList(VisitorCenter),
                 args: { parkCode: { type: GraphQLString } },
+                /**
+                 * resolves to all visitor centers for a given park
+                 * @param {Object} parent - parent object
+                 * @param {Object} args - arguments object
+                 */                
                 resolve(parent, args) {
                     // get visitor centers
                     return _.filter(centerJson.data, (item) => {

@@ -24,6 +24,10 @@
   font-size: 11px;
 }
 
+.mediumfonts {
+  font-size: 13px;
+}
+
 .tagfonts {
   font-size: 12px;
 }
@@ -204,6 +208,7 @@
 #sidebar ul li.active > a, a[aria-expanded="true"] {
   color: #ccc;
 }
+
 ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
@@ -223,4 +228,14 @@ ul ul a {
   min-height: 400px;
   max-height: 700px;
   overflow-y: auto;
+}
+
+.search-box {
+  display: inline;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+
+fa-white {
+  color: white;
 }
