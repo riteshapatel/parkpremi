@@ -16,6 +16,8 @@ ParkPremi is a React App (of course!). API is swiftly integrated with GraphQL an
 
 As the project grows, I will be adding Mongoose and a noSql database. Have patience young gun!
 
+ParkPremi is fully containerized with dockerfile(s). Additionally, ParkPremi is configured with docker-compose for production deployment.
+
 **Graphiql**
 
 Project has Graphiql enabled on port 3003. Run / test queries using graphiql in development.
