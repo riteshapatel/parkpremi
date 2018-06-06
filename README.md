@@ -32,7 +32,7 @@ http://localhost:3003/graphiql
 
 **Front End**
 
-App is viewed on port 3000.
+Run npm start to fire up the app.
 
 ```
 npm start
