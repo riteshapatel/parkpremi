@@ -1,8 +1,10 @@
 #### ParkPremi - Your Park Ranger
 
-**Author: Ritesh Patel**
+*Author: Ritesh Patel*
 
-**Date: 06/05/2018**
+*Date: 06/05/2018*
+
+---
 
 **Description**
 Ah, I absolutely love the immense beauty of our National Parks. Believe me if I had a choice I'd be totally into park hopping :) This project is an honest attempt to build a useful app for nature lovers. 
