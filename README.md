@@ -21,12 +21,24 @@ As the project grows, I will be adding Mongoose and a noSql database. Have patie
 Project has Graphiql enabled on port 3003. Run / test queries using graphiql.
 
 ```
+nodemon server
+```
+
+Access graphiql on port 3003.
+
+```
 http://localhost:3003/graphiql
 ```
 
 **Front End**
 
 App is viewed on port 3000.
+
+```
+npm start
+```
+
+Access app via browser on port 3000.
 
 ```
 http://localhost:3000
