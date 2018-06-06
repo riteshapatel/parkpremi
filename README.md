@@ -10,7 +10,7 @@
 
 Ah, I absolutely love the immense beauty of our National Parks. Believe me if I had a choice I'd be totally into park hopping :) This project is an honest attempt to build a useful app for nature lovers. 
 
-**Dependences**
+**Dependencies**
 
 ParkPremi is a React App (of course!). API is swiftly integrated with GraphQL and Apollo. At the moment data is pulled via local JSON files. But why? Well, most of the national park data is static in nature.  
 
