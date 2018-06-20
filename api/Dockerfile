@@ -15,5 +15,7 @@ COPY data /usr/src/api/data
 COPY schema /usr/src/api/schema 
 COPY server.js /usr/src/api 
 
+HEALTHCHECK --interval=5s --timeout=5s CMD curl -f http://0.0.0.0:3003/graphql || exit 1
+
 EXPOSE 3003 
 CMD ["npm", "start"]

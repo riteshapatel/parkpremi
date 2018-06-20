@@ -99,6 +99,18 @@ EXPOSE 3003
 CMD ["npm", "start"]
 ```
 
+To build the docker image run this command.
+
+```
+docker build -t parkpremi-api .
+```
+
+Then run the container with following command.
+
+```
+docker run -d -p 3003:3003 parkpremi-api
+```
+
 **Docker Compose (production deployment)**
 
 Above mentioned docker files are good for running individual containers. Use the docker compose file below for production deployment.
